@@ -1,8 +1,8 @@
-
 "use client";
 
 import { MessageCircle, Phone, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CONTACT_LINKS } from "@/lib/constants";
 
 export function StickyCTAs() {
   return (
@@ -21,12 +21,12 @@ export function StickyCTAs() {
       <div className="fixed bottom-0 left-0 right-0 z-[60] md:hidden bg-white border-t p-3 flex items-center justify-between shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
         <div className="flex gap-2">
           <Button variant="outline" size="icon" className="h-12 w-12 rounded-full text-green-600 border-green-200" asChild>
-            <a href="https://wa.me/yourwhatsappnumber" target="_blank" rel="noopener noreferrer">
+            <a href={CONTACT_LINKS.whatsapp} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="h-6 w-6" />
             </a>
           </Button>
           <Button variant="outline" size="icon" className="h-12 w-12 rounded-full text-primary border-primary/20" asChild>
-            <a href="tel:+1234567890">
+            <a href={CONTACT_LINKS.phone}>
               <Phone className="h-6 w-6" />
             </a>
           </Button>

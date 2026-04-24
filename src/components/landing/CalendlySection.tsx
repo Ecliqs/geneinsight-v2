@@ -1,5 +1,9 @@
+import { CONTACT_LINKS } from "@/lib/constants";
 
 export function CalendlySection() {
+  // We append query parameters to the base Calendly URL to hide headers and banners
+  const embedUrl = `${CONTACT_LINKS.calendly}?hide_event_type_details=1&hide_gdpr_banner=1`;
+
   return (
     <section className="py-20 bg-background" id="calendly">
       <div className="container mx-auto px-4">
@@ -10,7 +14,7 @@ export function CalendlySection() {
           </div>
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden border min-h-[700px]">
             <iframe
-              src="https://calendly.com/mudita-ecliqs/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+              src={embedUrl}
               width="100%"
               height="700"
               frameBorder="0"
