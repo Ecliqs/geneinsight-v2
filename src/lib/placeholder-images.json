@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-dna",
+      "description": "Abstract DNA helix with medical blue tones",
+      "imageUrl": "https://picsum.photos/seed/gene1/800/600",
+      "imageHint": "DNA genomics"
+    },
+    {
+      "id": "microscopy-cells",
+      "description": "High-end microscopy cellular imagery",
+      "imageUrl": "https://picsum.photos/seed/micro2/800/600",
+      "imageHint": "microscopy cellular"
+    },
+    {
+      "id": "lab-visuals",
+      "description": "Clean modern laboratory diagnostics",
+      "imageUrl": "https://picsum.photos/seed/lab3/800/600",
+      "imageHint": "laboratory research"
+    },
+    {
+      "id": "genomics-background",
+      "description": "Subtle clinical background with medical patterns",
+      "imageUrl": "https://picsum.photos/seed/bg4/1920/1080",
+      "imageHint": "medical clean"
+    }
+  ]
 }
