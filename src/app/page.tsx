@@ -1,4 +1,3 @@
-
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { ProofStrip } from "@/components/landing/ProofStrip";
@@ -6,13 +5,15 @@ import { ProblemSection } from "@/components/landing/ProblemSection";
 import { SolutionSection } from "@/components/landing/SolutionSection";
 import { Capabilities } from "@/components/landing/Capabilities";
 import { TrustSection } from "@/components/landing/TrustSection";
+import { WhatToExpect } from "@/components/landing/WhatToExpect";
 import { ConditionsSection } from "@/components/landing/ConditionsSection";
 import { HowItWorks } from "@/components/landing/HowItWorks";
 import { QualitySection } from "@/components/landing/QualitySection";
 import { CTASection } from "@/components/landing/CTASection";
 import { CalendlySection } from "@/components/landing/CalendlySection";
 import { StickyCTAs } from "@/components/landing/StickyCTAs";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -25,31 +26,33 @@ export default function Home() {
         <SolutionSection />
         
         {/* Symptoms to Root Cause Section */}
-        <section className="py-20 bg-muted/20">
-          <div className="container mx-auto px-4 text-center max-w-3xl">
-            <h2 className="text-3xl font-bold mb-6">From Symptoms to Root Cause</h2>
-            <p className="text-lg text-muted-foreground mb-12">
-              We enable the shift from traditional symptomatic observation to genetic precision, identifying underlying biological triggers.
+        <section className="py-24 bg-muted/20 border-y">
+          <div className="container mx-auto px-4 text-center max-w-4xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Stop Managing Symptoms. Start Finding the Root Cause.</h2>
+            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Many conditions remain unresolved because underlying genetic causes are missed. We help identify what traditional diagnostics cannot.
             </p>
-            <div className="flex items-center justify-center gap-4 md:gap-12">
-              <div className="px-6 py-4 bg-white rounded-xl shadow-sm border border-red-100 line-through text-muted-foreground opacity-60">
-                Symptom Management
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 mb-12">
+              <div className="w-full md:w-auto px-8 py-5 bg-white rounded-2xl shadow-sm border border-red-100 line-through text-muted-foreground opacity-60 font-medium">
+                Traditional Testing
               </div>
-              <div className="text-primary">
-                <svg width="48" height="24" viewBox="0 0 48 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 12H44M44 12L34 2M44 12L34 22" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+              <div className="text-primary animate-bounce md:animate-none md:rotate-0 rotate-90">
+                <ArrowRight className="h-8 w-8" />
               </div>
-              <div className="px-6 py-4 bg-primary text-white rounded-xl shadow-lg font-bold">
-                Genetic Root Cause
+              <div className="w-full md:w-auto px-8 py-5 bg-primary text-white rounded-2xl shadow-lg font-bold text-lg ring-4 ring-primary/20">
+                Root Cause Diagnosis
               </div>
             </div>
+            <Button size="lg" variant="outline" className="rounded-full h-12 px-8" asChild>
+              <a href="#how-it-works">See How It Works</a>
+            </Button>
           </div>
         </section>
 
         <Capabilities />
         <ConditionsSection />
         <TrustSection />
+        <WhatToExpect />
         <HowItWorks />
         <QualitySection />
 
