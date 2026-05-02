@@ -27,9 +27,9 @@ export function Header() {
           <Button variant="outline" className="hidden sm:inline-flex" asChild>
             <Link href="#calendly">Book Discussion</Link>
           </Button>
-          <Button asChild>
+          {/* <Button asChild>
             <Link href="#calendly">Discuss a Case</Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </header>
