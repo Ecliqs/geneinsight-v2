@@ -15,7 +15,7 @@ export function CTASection() {
           <Button size="lg" className="h-16 px-10 text-xl rounded-full bg-white text-primary hover:bg-white/90 shadow-xl" asChild>
             <a href="#calendly">Discuss a Case</a>
           </Button>
-          <Button size="lg" variant="outline" className="h-16 px-10 text-xl rounded-full border-white text-white hover:bg-white/10" asChild>
+          <Button size="lg" variant="outline" className="h-16 px-10 text-xl rounded-full border-white text-primary hover:text-white hover:bg-white/10" asChild>
             <a href="#calendly">Book Clinical Discussion</a>
           </Button>
         </div>

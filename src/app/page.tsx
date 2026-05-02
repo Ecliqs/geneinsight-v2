@@ -10,10 +10,12 @@ import { ConditionsSection } from "@/components/landing/ConditionsSection";
 import { HowItWorks } from "@/components/landing/HowItWorks";
 import { QualitySection } from "@/components/landing/QualitySection";
 import { CTASection } from "@/components/landing/CTASection";
-import { CalendlySection } from "@/components/landing/CalendlySection";
+// import { CalendlySection } from "@/components/landing/CalendlySection";
+
 import { StickyCTAs } from "@/components/landing/StickyCTAs";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ConsultForm } from "@/components/landing/ConsultForm";
 
 export default function Home() {
   return (
@@ -78,7 +80,8 @@ export default function Home() {
         </section>
 
         <CTASection />
-        <CalendlySection />
+        {/* <CalendlySection /> */}
+        <ConsultForm />
       </main>
       
       <footer className="bg-white border-t py-12">
