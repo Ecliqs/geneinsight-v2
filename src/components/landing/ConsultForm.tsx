@@ -94,7 +94,7 @@ export const ConsultForm = () => {
   );
 
   return (
-    <section id="contact" className="py-24 bg-surface/40">
+    <section id="contact" className="py-24 bg-surface/40" id="calendly">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
